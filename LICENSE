@@ -1,0 +1,10 @@
+git init //初始化版本库
+git config --global user.name 'name'   //设置版本库的全局认证信息
+git config --global user.email email@xxx.com  //设置版本库的全局认证信息
+
+git add file.txt   //添加到版本库
+git commit -m 'xxxx'   // 将修改提交到版本库的管理中
+
+git log [--pretty-oneline]  //查看修改日志【更方便查看的显示效果】
+git reset --hard HEAD^ | commit id  //回退到上一个版本。HEAD表示当前版本。HEAD^表示上一个版本。上1000个版本就是HEAD~1000
+git reflog //记录每次命令日志
